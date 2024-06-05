@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquee Slide</title>
+
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/slide.css" />
+  </head>
+  <body>
+    <div class="marquee">
+      <h1>
+         | สามารถสนับสนุนช่องนี้ได้ทาง https://tipme.in.th/dot-factory หรือ
+        สนับสนุนโดยการซื้อกล่องสุ่ม Key Steam ใน https://justplay.altsera.com/
+        ได้เลยครับ (ลิงก์อยู่ใน Description) | 
+      </h1>
+    </div>
+
+    <script>
+      function animate(element) {
+        let elementWidth = element.offsetWidth;
+        let parentWidth = element.parentElement.offsetWidth;
+        let flag = 0;
+
+        setInterval(() => {
+          element.style.marginLeft = --flag + "px";
+
+          if (elementWidth == -flag) {
+            flag = parentWidth;
+          }
+        }, 10);
+      }
+
+      animate(document.querySelector('.marquee'));
+    </script>
+  </body>
+</html>

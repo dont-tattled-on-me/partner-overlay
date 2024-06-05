@@ -1,0 +1,14 @@
+body {
+  width: 1920px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee h1 {
+  font-size: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}

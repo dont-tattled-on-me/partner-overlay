@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Reddit+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:100,200,300,regular,500,600,700);
+
+* {
+  font-family: 'Reddit Sans', 'IBM Plex Sans Thai', sans-serif;
+  transition: all .3s;
+}
+
+body {
+  background: transparent;
+}
